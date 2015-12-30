@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CurrencyConverterActivity" >
+
+    <EditText
+        android:id="@+id/editText_Input_Currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Enter Input" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_Select_Currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_Input_Currency"
+        android:layout_below="@+id/editText_Input_Currency"
+        android:layout_marginTop="32dp" >
+
+        <RadioButton
+            android:id="@+id/radio0_First_Currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ TO Rs" />
+
+        <RadioButton
+            android:id="@+id/radio1_Second_Curency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs TO $" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_Result_Currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup_Select_Currency"
+        android:layout_below="@+id/radioGroup_Select_Currency"
+        android:layout_marginTop="94dp"
+        android:text="Result" />
+
+    <Button
+        android:id="@+id/button_Home_Currncy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_Result_Currency"
+        android:layout_alignRight="@+id/editText_Input_Currency"
+        android:text="Home" />
+
+</RelativeLayout>
